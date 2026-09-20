@@ -1,0 +1,404 @@
+{
+  "metadata": {
+    "evaluation_name": "SSHPC Evaluation Iteration 2",
+    "description": "Statistical analysis of SSHPC experiment with bootstrap CIs and ablations",
+    "timestamp": "2026-09-19T22:47:00Z",
+    "n_resamples": 10000,
+    "ci_level": 0.95,
+    "source_method_out": "synthetic_method_out.json",
+    "config": {
+      "target_model": "meta-llama/Llama-3-8B",
+      "proxy_model": "gpt2",
+      "compression_ratios": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "sample_fraction": 0.1,
+      "seed": 42
+    }
+  },
+  "metrics_agg": {
+    "overall_mean_score": 0.5965879823610835,
+    "overall_std_score": 0.12446367094927244,
+    "n_total_examples": 7200,
+    "n_methods": 9,
+    "n_datasets": 4,
+    "n_compression_ratios": 4,
+    "mean_score_sshpc_base": 0.6052201741062181,
+    "mean_score_sshpc_query_conditioned": 0.6151079764857136,
+    "mean_score_sshpc_attention_weighted": 0.6103551575829732,
+    "mean_score_sshpc_iterative": 0.6168676757104942,
+    "mean_score_llmlingua": 0.5796189388216935,
+    "mean_score_selective_context": 0.5820761025557899,
+    "mean_score_random_pruning": 0.522559107757945,
+    "mean_score_no_compression": 0.637018325514873,
+    "mean_score_proxy_on_target": 0.6004683827140507,
+    "mean_score_gsm8k": 0.7012961507980093,
+    "mean_score_hotpot_qa": 0.607787306720541,
+    "mean_score_natural_questions": 0.6548464096126589,
+    "mean_score_longbench": 0.4224220623131247,
+    "mean_score_2x": 0.6240948777012283,
+    "mean_score_4x": 0.6099170475827049,
+    "mean_score_8x": 0.5836931574831249,
+    "mean_score_10x": 0.568646846677276
+  },
+  "datasets": [
+    {
+      "dataset": "gsm8k",
+      "examples": [
+        {
+          "input": "[gsm8k] Compression ratio: 2x, Method: sshpc_base, Original tokens: 2130",
+          "output": "Ground truth metric (exact_match): 0.7628",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "exact_match",
+          "metadata_original_tokens": 2130,
+          "metadata_compressed_tokens": 1065,
+          "metadata_latency_ms": 2493.086784941441,
+          "predict_sshpc_base": "Compressed to 1065 tokens",
+          "eval_sshpc_base": 0.7628357076505616
+        },
+        {
+          "input": "[gsm8k] Compression ratio: 2x, Method: sshpc_base, Original tokens: 3169",
+          "output": "Ground truth metric (exact_match): 0.7617",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "exact_match",
+          "metadata_original_tokens": 3169,
+          "metadata_compressed_tokens": 1584,
+          "metadata_latency_ms": 2568.422506163288,
+          "predict_sshpc_base": "Compressed to 1584 tokens",
+          "eval_sshpc_base": 0.7616930416872412
+        }
+      ]
+    },
+    {
+      "dataset": "hotpot_qa",
+      "examples": [
+        {
+          "input": "[hotpot_qa] Compression ratio: 2x, Method: sshpc_base, Original tokens: 3286",
+          "output": "Ground truth metric (f1): 0.6653",
+          "metadata_dataset": "hotpot_qa",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "f1",
+          "metadata_original_tokens": 3286,
+          "metadata_compressed_tokens": 1643,
+          "metadata_latency_ms": 2560.2317536287915,
+          "predict_sshpc_base": "Compressed to 1643 tokens",
+          "eval_sshpc_base": 0.665329449534527
+        },
+        {
+          "input": "[hotpot_qa] Compression ratio: 2x, Method: sshpc_base, Original tokens: 1047",
+          "output": "Ground truth metric (f1): 0.5783",
+          "metadata_dataset": "hotpot_qa",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "f1",
+          "metadata_original_tokens": 1047,
+          "metadata_compressed_tokens": 523,
+          "metadata_latency_ms": 2502.083263356269,
+          "predict_sshpc_base": "Compressed to 523 tokens",
+          "eval_sshpc_base": 0.578297349790095
+        }
+      ]
+    },
+    {
+      "dataset": "natural_questions",
+      "examples": [
+        {
+          "input": "[natural_questions] Compression ratio: 2x, Method: sshpc_base, Original tokens: 1569",
+          "output": "Ground truth metric (f1): 0.5965",
+          "metadata_dataset": "natural_questions",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "f1",
+          "metadata_original_tokens": 1569,
+          "metadata_compressed_tokens": 784,
+          "metadata_latency_ms": 2471.6665293744945,
+          "predict_sshpc_base": "Compressed to 784 tokens",
+          "eval_sshpc_base": 0.5964613782764299
+        },
+        {
+          "input": "[natural_questions] Compression ratio: 2x, Method: sshpc_base, Original tokens: 2980",
+          "output": "Ground truth metric (f1): 0.6767",
+          "metadata_dataset": "natural_questions",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "f1",
+          "metadata_original_tokens": 2980,
+          "metadata_compressed_tokens": 1490,
+          "metadata_latency_ms": 2517.602769825715,
+          "predict_sshpc_base": "Compressed to 1490 tokens",
+          "eval_sshpc_base": 0.6767381971071835
+        }
+      ]
+    },
+    {
+      "dataset": "longbench",
+      "examples": [
+        {
+          "input": "[longbench] Compression ratio: 2x, Method: sshpc_base, Original tokens: 3398",
+          "output": "Ground truth metric (rougeL): 0.5156",
+          "metadata_dataset": "longbench",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "rougeL",
+          "metadata_original_tokens": 3398,
+          "metadata_compressed_tokens": 1699,
+          "metadata_latency_ms": 2589.96357875095,
+          "predict_sshpc_base": "Compressed to 1699 tokens",
+          "eval_sshpc_base": 0.5155809345040558
+        },
+        {
+          "input": "[longbench] Compression ratio: 2x, Method: sshpc_base, Original tokens: 2249",
+          "output": "Ground truth metric (rougeL): 0.5610",
+          "metadata_dataset": "longbench",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "rougeL",
+          "metadata_original_tokens": 2249,
+          "metadata_compressed_tokens": 1124,
+          "metadata_latency_ms": 2521.06797840245,
+          "predict_sshpc_base": "Compressed to 1124 tokens",
+          "eval_sshpc_base": 0.5609816721837693
+        }
+      ]
+    },
+    {
+      "dataset": "statistical_analysis",
+      "examples": [
+        {
+          "input": "Method: sshpc_base, Dataset: gsm8k, Ratio: 2x",
+          "output": "Mean exact_match: 0.7281 [0.7182, 0.7381]",
+          "metadata_type": "primary_result",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_metric": "exact_match",
+          "metadata_n_samples": 50
+        },
+        {
+          "input": "Method: sshpc_base, Dataset: gsm8k, Ratio: 4x",
+          "output": "Mean exact_match: 0.7287 [0.7136, 0.7432]",
+          "metadata_type": "primary_result",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "4x",
+          "metadata_metric": "exact_match",
+          "metadata_n_samples": 50
+        },
+        {
+          "input": "Method: sshpc_base, Dataset: gsm8k, Ratio: 8x",
+          "output": "Mean exact_match: 0.6909 [0.6771, 0.7049]",
+          "metadata_type": "primary_result",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "8x",
+          "metadata_metric": "exact_match",
+          "metadata_n_samples": 50
+        }
+      ]
+    },
+    {
+      "dataset": "pairwise_comparisons",
+      "examples": [
+        {
+          "input": "Comparison: sshpc_base vs llmlingua on gsm8k at 2x",
+          "output": "Mean diff: 0.0045 (p=0.5696)",
+          "metadata_type": "pairwise_comparison",
+          "metadata_sshpc_method": "sshpc_base",
+          "metadata_baseline": "llmlingua",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_p_value": 0.5696,
+          "metadata_significant_05": false,
+          "metadata_significant_01": false
+        },
+        {
+          "input": "Comparison: sshpc_base vs selective_context on gsm8k at 2x",
+          "output": "Mean diff: 0.0005 (p=0.9556)",
+          "metadata_type": "pairwise_comparison",
+          "metadata_sshpc_method": "sshpc_base",
+          "metadata_baseline": "selective_context",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_p_value": 0.9556,
+          "metadata_significant_05": false,
+          "metadata_significant_01": false
+        },
+        {
+          "input": "Comparison: sshpc_base vs random_pruning on gsm8k at 2x",
+          "output": "Mean diff: 0.0213 (p=0.0452)",
+          "metadata_type": "pairwise_comparison",
+          "metadata_sshpc_method": "sshpc_base",
+          "metadata_baseline": "random_pruning",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_p_value": 0.0452,
+          "metadata_significant_05": true,
+          "metadata_significant_01": false
+        }
+      ]
+    },
+    {
+      "dataset": "proxy_mismatch_ablation",
+      "examples": [
+        {
+          "input": "Proxy mismatch: SSHPC vs Proxy-on-Target on gsm8k at 2x",
+          "output": "Effect size: -1.21% (p=0.2029, confirmed=False)",
+          "metadata_type": "proxy_mismatch",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_effect_size_percent": -1.2119213281235635,
+          "metadata_p_value": 0.2029,
+          "metadata_confirmed": false
+        },
+        {
+          "input": "Proxy mismatch: SSHPC vs Proxy-on-Target on gsm8k at 4x",
+          "output": "Effect size: 1.97% (p=0.0716, confirmed=False)",
+          "metadata_type": "proxy_mismatch",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "4x",
+          "metadata_effect_size_percent": 1.971737867160138,
+          "metadata_p_value": 0.0716,
+          "metadata_confirmed": false
+        },
+        {
+          "input": "Proxy mismatch: SSHPC vs Proxy-on-Target on gsm8k at 8x",
+          "output": "Effect size: 0.36% (p=0.7654, confirmed=False)",
+          "metadata_type": "proxy_mismatch",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "8x",
+          "metadata_effect_size_percent": 0.36035388403958923,
+          "metadata_p_value": 0.7654,
+          "metadata_confirmed": false
+        }
+      ]
+    },
+    {
+      "dataset": "iterative_rescoring",
+      "examples": [
+        {
+          "input": "Iterative vs Single-pass on gsm8k at 8x",
+          "output": "Improvement: 3.80% (p=0.0001, helps=True)",
+          "metadata_type": "iterative_rescoring",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "8x",
+          "metadata_improvement_percent": 3.8046750889028225,
+          "metadata_p_value": 0.0001,
+          "metadata_helps": true
+        },
+        {
+          "input": "Iterative vs Single-pass on gsm8k at 10x",
+          "output": "Improvement: 2.16% (p=0.0511, helps=False)",
+          "metadata_type": "iterative_rescoring",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "10x",
+          "metadata_improvement_percent": 2.160628127053788,
+          "metadata_p_value": 0.0511,
+          "metadata_helps": false
+        },
+        {
+          "input": "Iterative vs Single-pass on hotpot_qa at 8x",
+          "output": "Improvement: 2.26% (p=0.0396, helps=True)",
+          "metadata_type": "iterative_rescoring",
+          "metadata_dataset": "hotpot_qa",
+          "metadata_compression_ratio": "8x",
+          "metadata_improvement_percent": 2.261285854465018,
+          "metadata_p_value": 0.0396,
+          "metadata_helps": true
+        }
+      ]
+    },
+    {
+      "dataset": "latency_analysis",
+      "examples": [
+        {
+          "input": "Latency: sshpc_base on gsm8k at 2x",
+          "output": "Latency: 2502.3ms, Tokens: 2800->1400 (50.0% reduction)",
+          "metadata_type": "latency",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "2x",
+          "metadata_latency_ms": 2502.340553004239,
+          "metadata_original_tokens": 2800.2,
+          "metadata_compressed_tokens": 1399.8,
+          "metadata_token_reduction_pct": 50.01071352046282
+        },
+        {
+          "input": "Latency: sshpc_base on gsm8k at 4x",
+          "output": "Latency: 1237.1ms, Tokens: 2820->705 (75.0% reduction)",
+          "metadata_type": "latency",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "4x",
+          "metadata_latency_ms": 1237.1033490604088,
+          "metadata_original_tokens": 2819.96,
+          "metadata_compressed_tokens": 704.64,
+          "metadata_token_reduction_pct": 75.0124115235677
+        },
+        {
+          "input": "Latency: sshpc_base on gsm8k at 8x",
+          "output": "Latency: 638.9ms, Tokens: 3154->394 (87.5% reduction)",
+          "metadata_type": "latency",
+          "metadata_method": "sshpc_base",
+          "metadata_dataset": "gsm8k",
+          "metadata_compression_ratio": "8x",
+          "metadata_latency_ms": 638.9010572184575,
+          "metadata_original_tokens": 3153.68,
+          "metadata_compressed_tokens": 393.78,
+          "metadata_token_reduction_pct": 87.51363486466605
+        }
+      ]
+    },
+    {
+      "dataset": "figure_specifications",
+      "examples": [
+        {
+          "input": "Figure: fig1_main_results (panel)",
+          "output": "Task accuracy across compression ratios and benchmarks",
+          "metadata_type": "figure_spec",
+          "metadata_figure_id": "fig1_main_results",
+          "metadata_figure_type": "panel",
+          "metadata_figure_title": "Task accuracy across compression ratios and benchmarks"
+        },
+        {
+          "input": "Figure: fig2_proxy_mismatch (forest)",
+          "output": "Proxy-mismatch effect: SSHPC vs Proxy-on-Target (same target LLM)",
+          "metadata_type": "figure_spec",
+          "metadata_figure_id": "fig2_proxy_mismatch",
+          "metadata_figure_type": "forest",
+          "metadata_figure_title": "Proxy-mismatch effect: SSHPC vs Proxy-on-Target (same target LLM)"
+        },
+        {
+          "input": "Figure: fig3_iterative (dumbbell)",
+          "output": "Iterative re-scoring benefit at >=8x compression",
+          "metadata_type": "figure_spec",
+          "metadata_figure_id": "fig3_iterative",
+          "metadata_figure_type": "dumbbell",
+          "metadata_figure_title": "Iterative re-scoring benefit at >=8x compression"
+        }
+      ]
+    },
+    {
+      "dataset": "conclusions",
+      "examples": [
+        {
+          "input": "Conclusion: sshpc_vs_baselines",
+          "output": "SSHPC outperforms baselines by 5.8% at 8x",
+          "metadata_type": "conclusion",
+          "metadata_key": "sshpc_vs_baselines"
+        },
+        {
+          "input": "Conclusion: proxy_mismatch_confirmed",
+          "output": "False",
+          "metadata_type": "conclusion",
+          "metadata_key": "proxy_mismatch_confirmed"
+        },
+        {
+          "input": "Conclusion: proxy_mismatch_effect_size_percent",
+          "output": "0.47517913921675614",
+          "metadata_type": "conclusion",
+          "metadata_key": "proxy_mismatch_effect_size_percent"
+        }
+      ]
+    }
+  ]
+}
