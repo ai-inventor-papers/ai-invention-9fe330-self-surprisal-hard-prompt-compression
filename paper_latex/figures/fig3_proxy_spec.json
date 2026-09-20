@@ -1,0 +1,32 @@
+{
+  "type": "forest",
+  "null_line": 0.0,
+  "title": "Proxy-Mismatch Ablation: SSHPC vs Proxy-on-Target",
+  "xlabel": "Accuracy difference (SSHPC − Proxy-on-Target, %)",
+  "aspect": "4:3",
+  "categories": [
+    "GSM8K 2x",
+    "GSM8K 4x",
+    "GSM8K 8x",
+    "GSM8K 10x",
+    "HotpotQA 2x",
+    "HotpotQA 4x",
+    "HotpotQA 8x",
+    "HotpotQA 10x",
+    "NaturalQuestions 2x",
+    "NaturalQuestions 4x",
+    "NaturalQuestions 8x",
+    "NaturalQuestions 10x",
+    "Longbench 2x",
+    "Longbench 4x",
+    "Longbench 8x",
+    "Longbench 10x"
+  ],
+  "series": [
+    {
+      "label": "Mean difference",
+      "values": [-1.21, 1.97, 0.36, 0.64, 0.39, 1.15, -0.01, 1.03, 0.57, 0.77, 1.24, 0.50, 1.01, -0.88, 0.03, 0.06],
+      "errors": [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5]
+    }
+  ]
+}

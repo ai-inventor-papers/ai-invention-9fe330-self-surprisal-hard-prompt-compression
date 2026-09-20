@@ -1,0 +1,100 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Jiang2023}
+\citation{Jiang2024}
+\citation{Pan2024}
+\citation{Li2023}
+\citation{Jiang2023}
+\citation{Xu2025}
+\citation{Chuang2024}
+\citation{Zeng2025}
+\citation{Chen2025}
+\citation{Mu2023}
+\citation{Chevalier2023}
+\citation{Ge2023}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Hard Prompt Compression via Proxy Models}{2}{subsection.2.1}\protected@file@percent }
+\citation{Gao2024}
+\citation{Nagle2024}
+\citation{Friston2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Soft Prompt Compression}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Theoretical Frameworks}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Self-Surprisal Hard Prompt Compression}{3}{subsection.3.1}\protected@file@percent }
+\citation{Friston2009}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Per-Token Surprisal Distribution (Synthetic). Violin plot of per-token surprisal distribution for GSM8K (synthetic data from log-normal fit to pilot runs). Surprisal values range from near 0 to $\sim $16, with a long right tail. Median $\sim $1.5, mean $\sim $3.2. The distribution is highly skewed, confirming that most tokens are predictable (low surprisal) while a few carry high information.\relax }}{4}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:fig7_surprisal}{{1}{4}{Per-Token Surprisal Distribution (Synthetic). Violin plot of per-token surprisal distribution for GSM8K (synthetic data from log-normal fit to pilot runs). Surprisal values range from near 0 to $\sim $16, with a long right tail. Median $\sim $1.5, mean $\sim $3.2. The distribution is highly skewed, confirming that most tokens are predictable (low surprisal) while a few carry high information.\relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Theoretical Motivation: Predictive Coding and Self-Surprisal}{4}{subsection.3.2}\protected@file@percent }
+\citation{Cobbe2021}
+\citation{Yang2018}
+\citation{Kwiatkowski2019}
+\citation{Bai2023}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Computational Considerations}{5}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Datasets and Tasks}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Target Models and Baselines}{5}{subsection.4.2}\protected@file@percent }
+\citation{Li2023}
+\citation{Jiang2023}
+\citation{Pan2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Compression Ratios and Metrics}{6}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Studies}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{7}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Main Results}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Task accuracy (\%) across four benchmarks and four compression ratios (2$\times $, 4$\times $, 8$\times $, 10$\times $) for six methods. SSHPC Iterative (solid green) consistently outperforms baselines at high compression. LLMLingua (blue) and SelectiveContext (orange) degrade faster than SSHPC variants. No Compression (black) is the upper bound. Random Pruning (gray) degrades rapidly. Error bars show 95\% bootstrap confidence intervals (10,000 resamples).\relax }}{7}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:fig2_main}{{2}{7}{Task accuracy (\%) across four benchmarks and four compression ratios (2$\times $, 4$\times $, 8$\times $, 10$\times $) for six methods. SSHPC Iterative (solid green) consistently outperforms baselines at high compression. LLMLingua (blue) and SelectiveContext (orange) degrade faster than SSHPC variants. No Compression (black) is the upper bound. Random Pruning (gray) degrades rapidly. Error bars show 95\% bootstrap confidence intervals (10,000 resamples).\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Proxy-Mismatch Ablation}{7}{subsection.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Proxy-Mismatch Ablation: SSHPC vs Proxy-on-Target. Accuracy difference (SSHPC Base minus Proxy-on-Target) across 16 dataset--ratio conditions. Positive values favor SSHPC. The average improvement is +0.48\% (not statistically significant, $p > 0.05$). Error bars show standard error (1.5\%). Conditions: GSM8K 2$\times $--10$\times $, HotpotQA 2$\times $--10$\times $, NaturalQuestions 2$\times $--10$\times $, LongBench 2$\times $--10$\times $.\relax }}{8}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:fig3_proxy}{{3}{8}{Proxy-Mismatch Ablation: SSHPC vs Proxy-on-Target. Accuracy difference (SSHPC Base minus Proxy-on-Target) across 16 dataset--ratio conditions. Positive values favor SSHPC. The average improvement is +0.48\% (not statistically significant, $p > 0.05$). Error bars show standard error (1.5\%). Conditions: GSM8K 2$\times $--10$\times $, HotpotQA 2$\times $--10$\times $, NaturalQuestions 2$\times $--10$\times $, LongBench 2$\times $--10$\times $.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Iterative Re-Scoring Benefit}{9}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Iterative Re-Scoring Benefit at High Compression. Dumbbell chart comparing single-pass vs iterative (3 rounds) SSHPC at 8$\times $ and 10$\times $ compression. Iterative re-scoring provides significant gains on GSM8K (+3.8 at 8$\times $, $p=0.0001$) and HotpotQA (+2.3 at 8$\times $, $p=0.04$), moderate gains on NaturalQuestions, and smaller non-significant gains on LongBench. Single-pass values are constant at 70\% (baseline reference).\relax }}{9}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:fig4_iterative}{{4}{9}{Iterative Re-Scoring Benefit at High Compression. Dumbbell chart comparing single-pass vs iterative (3 rounds) SSHPC at 8$\times $ and 10$\times $ compression. Iterative re-scoring provides significant gains on GSM8K (+3.8 at 8$\times $, $p=0.0001$) and HotpotQA (+2.3 at 8$\times $, $p=0.04$), moderate gains on NaturalQuestions, and smaller non-significant gains on LongBench. Single-pass values are constant at 70\% (baseline reference).\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Query-Conditioned and Attention-Weighted Variants}{9}{subsection.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces SSHPC Variant Comparison at 8$\times $ Compression. Comparison of four SSHPC variants at 8$\times $ compression across four datasets. Iterative (green) leads on GSM8K (72.9\%) and HotpotQA (62.5\%). Query-Conditioned (orange) leads on NaturalQuestions (67.6\%). Attention-Weighted (purple) is competitive on GSM8K (71.7\%) and HotpotQA (62.2\%). Base (blue) is the single-pass unconditional variant. Error bars show 95\% CI.\relax }}{10}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:fig5_variants}{{5}{10}{SSHPC Variant Comparison at 8$\times $ Compression. Comparison of four SSHPC variants at 8$\times $ compression across four datasets. Iterative (green) leads on GSM8K (72.9\%) and HotpotQA (62.5\%). Query-Conditioned (orange) leads on NaturalQuestions (67.6\%). Attention-Weighted (purple) is competitive on GSM8K (71.7\%) and HotpotQA (62.2\%). Base (blue) is the single-pass unconditional variant. Error bars show 95\% CI.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Latency Break-Even}{11}{subsection.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces End-to-End Latency vs Compression Ratio. End-to-end latency (compression + generation) vs compression ratio for four methods. Break-even occurs at 2$\times $ for all methods. At 2$\times $, latency $\sim $2500ms; at 4$\times $, $\sim $1250ms; at 8$\times $, $\sim $625ms; at 10$\times $, $\sim $500ms. SSHPC Base (green) and Iterative (purple) overlap with LLMLingua (blue) and No Compression (black) within error bands. Shaded bands show standard deviation across datasets.\relax }}{11}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:fig6_latency}{{6}{11}{End-to-End Latency vs Compression Ratio. End-to-end latency (compression + generation) vs compression ratio for four methods. Break-even occurs at 2$\times $ for all methods. At 2$\times $, latency $\sim $2500ms; at 4$\times $, $\sim $1250ms; at 8$\times $, $\sim $625ms; at 10$\times $, $\sim $500ms. SSHPC Base (green) and Iterative (purple) overlap with LLMLingua (blue) and No Compression (black) within error bands. Shaded bands show standard deviation across datasets.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{11}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Summary of Findings}{11}{subsection.6.1}\protected@file@percent }
+\citation{Salazar2020}
+\citation{Nagle2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Limitations}{12}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Broader Implications}{12}{subsection.6.3}\protected@file@percent }
+\bibdata{references}
+\bibcite{Bai2023}{{1}{2023}{{Bai et~al.}}{{Bai, Lv, Zhang, Lyu, Tang, Huang, Du, Liu, Zeng, Hou, Dong, Tang, and Li}}}
+\bibcite{Chen2025}{{2}{2025}{{Chen et~al.}}{{Chen, Wang, Zeng, Zhang, Liu, and Feng}}}
+\bibcite{Chevalier2023}{{3}{2023}{{Chevalier et~al.}}{{Chevalier, Wettig, Ajith, and Chen}}}
+\bibcite{Chuang2024}{{4}{2024}{{Chuang et~al.}}{{Chuang, Chen, and Chen}}}
+\bibcite{Cobbe2021}{{5}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman}}}
+\bibcite{Friston2009}{{6}{2009}{{Friston}}{{}}}
+\bibcite{Gao2024}{{7}{2024}{{Gao et~al.}}{{Gao, Cao, and Li}}}
+\bibcite{Ge2023}{{8}{2023}{{Ge et~al.}}{{Ge, Chen, Wei, and Sui}}}
+\bibcite{Nagle2024}{{9}{2024}{{Girish et~al.}}{{Girish, Nagle, Bondaschi, Gastpar, Makkuva, and Kim}}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{13}{section.7}\protected@file@percent }
+\bibcite{Jiang2023}{{10}{2023}{{Jiang et~al.}}{{Jiang, Wu, Lin, Yang, and Qiu}}}
+\bibcite{Jiang2024}{{11}{2024}{{Jiang et~al.}}{{Jiang, Wu, Luo, Li, Lin, Yang, and Qiu}}}
+\bibcite{Kwiatkowski2019}{{12}{2019}{{Kwiatkowski et~al.}}{{Kwiatkowski, Palomaki, Redfield, Collins, Parikh, Alberti, Epstein, Polosukhin, Devlin, Lee, Toutanova, Jones, Kelcey, Chang, Dai, Uszkoreit, Le, and Petrov}}}
+\bibcite{Li2023}{{13}{2023}{{Li et~al.}}{{Li, Lu, Dou, and Wen}}}
+\bibcite{Mu2023}{{14}{2023}{{Mu et~al.}}{{Mu, Li, and Goodman}}}
+\bibcite{Pan2024}{{15}{2024}{{Pan et~al.}}{{Pan, Wu, Jiang, Xia, Luo, Zhang, Lin, R{\"u}hle, Yang, Lin, Zhao, Qiu, and Zhang}}}
+\bibcite{Salazar2020}{{16}{2020}{{Salazar et~al.}}{{Salazar, Liang, Nguyen, and Kirchhoff}}}
+\bibcite{Xu2025}{{17}{2025}{{Xu et~al.}}{{Xu, Wang, Zhang, Zhang, Yang, Hu, Wang, and Zhou}}}
+\bibcite{Yang2018}{{18}{2018}{{Yang et~al.}}{{Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and Manning}}}
+\bibcite{Zeng2025}{{19}{2025}{{Zeng et~al.}}{{Zeng, Wang, Li, Zhang, Liu, and Feng}}}
+\bibstyle{plainnat}
+\gdef \@abspage@last{14}

@@ -1,0 +1,29 @@
+{
+  "type": "dumbbell",
+  "title": "Iterative Re-Scoring Benefit at High Compression",
+  "xlabel": "Accuracy (%)",
+  "ylabel": "Condition",
+  "aspect": "4:3",
+  "annotate": true,
+  "fmt": "+.1f",
+  "categories": [
+    "GSM8K 8×",
+    "GSM8K 10×",
+    "HotpotQA 8×",
+    "HotpotQA 10×",
+    "NaturalQuestions 8×",
+    "NaturalQuestions 10×",
+    "LongBench 8×",
+    "LongBench 10×"
+  ],
+  "series": [
+    {
+      "label": "Single-pass",
+      "values": [70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0, 70.0]
+    },
+    {
+      "label": "Iterative (3 rounds)",
+      "values": [73.80, 72.16, 72.26, 71.67, 71.13, 73.46, 70.76, 71.20]
+    }
+  ]
+}

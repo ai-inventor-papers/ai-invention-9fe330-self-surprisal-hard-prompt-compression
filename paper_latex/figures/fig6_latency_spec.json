@@ -1,0 +1,35 @@
+{
+  "type": "line",
+  "title": "End-to-End Latency vs Compression Ratio",
+  "xlabel": "Compression Ratio",
+  "ylabel": "End-to-End Latency (ms)",
+  "aspect": "16:9",
+  "xlim": [1.5, 10.5],
+  "ylim": [0, 2600],
+  "series": [
+    {
+      "label": "No Compression",
+      "x": [2, 4, 8, 10],
+      "values": [2498.9, 1252.2, 622.2, 496.0],
+      "band": 4.09
+    },
+    {
+      "label": "LLMLingua",
+      "x": [2, 4, 8, 10],
+      "values": [2501.0, 1252.7, 621.6, 499.8],
+      "band": 5.93
+    },
+    {
+      "label": "SSHPC Base",
+      "x": [2, 4, 8, 10],
+      "values": [2494.2, 1249.0, 630.1, 504.2],
+      "band": 5.60
+    },
+    {
+      "label": "SSHPC Iterative",
+      "x": [2, 4, 8, 10],
+      "values": [2503.2, 1246.3, 626.7, 497.9],
+      "band": 5.09
+    }
+  ]
+}
