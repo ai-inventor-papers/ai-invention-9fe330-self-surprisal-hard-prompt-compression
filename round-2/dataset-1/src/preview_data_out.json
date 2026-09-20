@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "description": "Prompt Compression Benchmark Datasets",
+    "total_examples": 33790,
+    "num_datasets": 9,
+    "task_types": [
+      "summarization",
+      "math_reasoning",
+      "reading_comprehension"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "arxiv",
+      "examples": [
+        {
+          "input": "Summarize the following document:\n\nadditive models @xcite provide an important family of models for semiparametric regression or classification . some reasons for the success of additive models are th...",
+          "output": "additive models play an important role in semiparametric statistics . \n this paper gives learning rates for regularized kernel based methods for additive models . \n these learning rates compare favour...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 25608
+        },
+        {
+          "input": "Summarize the following document:\n\nthe leptonic decays of a charged pseudoscalar meson @xmath7 are processes of the type @xmath8 , where @xmath9 , @xmath10 , or @xmath11 . because no strong interactio...",
+          "output": "we have studied the leptonic decay @xmath0 , via the decay channel @xmath1 , using a sample of tagged @xmath2 decays collected near the @xmath3 peak production energy in @xmath4 collisions with the cl...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 25609
+        },
+        {
+          "input": "Summarize the following document:\n\nthe transport properties of nonlinear non - equilibrium dynamical systems are far from well - understood@xcite . consider in particular so - called ratchet systems w...",
+          "output": "in 84 , 258 ( 2000 ) , mateos conjectured that current reversal in a classical deterministic ratchet is associated with bifurcations from chaotic to periodic regimes . \n this is based on the compariso...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 25610
+        }
+      ]
+    },
+    {
+      "dataset": "govreport",
+      "examples": [
+        {
+          "input": "Summarize the following document:\n\nThe structure of the armed forces is based on the Total Force concept, which recognizes that all elements of the structure—active duty military personnel, reservists...",
+          "output": "As the Department of Defense (DOD) has expanded its involvement in overseas military operations, it has grown increasingly reliant on its federal civilian workforce to support contingency operations. ...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 26108
+        },
+        {
+          "input": "Summarize the following document:\n\nMost income derived from private sector business activity in the United States is subject to federal corporate income tax, the individual income tax, or both. The ta...",
+          "output": "Business income taxes, both corporate and noncorporate, are a significant portion of federal tax revenue. Businesses also play a crucial role in collecting taxes from individuals, through withholding ...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 26109
+        },
+        {
+          "input": "Summarize the following document:\n\nThere are some similarities in how Medicare pays ASCs and hospital outpatient departments for the procedures they perform. However, the methods used by CMS to calcul...",
+          "output": "Medicare pays for surgical procedures performed at ambulatory surgical centers (ASC) and hospital outpatient departments through different payment systems. Although they perform a similar set of proce...",
+          "metadata_task_type": "summarization",
+          "metadata_split": "train",
+          "metadata_row_index": 26110
+        }
+      ]
+    },
+    {
+      "dataset": "gsm8k",
+      "examples": [
+        {
+          "input": "Three people invested $1200 in a joint savings account.  After Dylan's investment of 2/5 of the total amount, Frances invested 2/3 of the remaining amount.  Skyler's investment accounted for the rest....",
+          "output": "Dylan's investment was 2/5 * $1200 = $<<2/5*1200=480>>480\nFrances and Skylers' investment was $1200 - $480 = $<<1200-480=720>>720\nFrances invested 2/3 * $720 = $<<2/3*720=480>>480\nDylan's and Frances'...",
+          "metadata_task_type": "math_reasoning",
+          "metadata_split": "test",
+          "metadata_row_index": 16822
+        },
+        {
+          "input": "Greta’s paycheck is $2400.00. She puts 50% of her pay into her retirement account. She then uses 20% of her paycheck to make her monthly car payment. After funding her retirement and paying for her ca...",
+          "output": "Her paycheck is $2400.00 and she puts 50% into her retirement so that’s 2400*.50 = $<<2400*.50=1200.00>>1200.00\nHer paycheck is $2400.00 and she puts $1200 into retirement so that leaves 2400-1200 = $...",
+          "metadata_task_type": "math_reasoning",
+          "metadata_split": "test",
+          "metadata_row_index": 16823
+        },
+        {
+          "input": "David and Dasha went to the carnival, where there are 9 rides.  Each ride costs 2 ride tickets at $2 per ticket.  You can also buy a ride bracelet for $30 which gives you 9 rides.  If David buys a rid...",
+          "output": "Each ride cost 2 x $2 = $<<2*2=4>>4.\nAll 9 rides cost $4 x 9 = $<<4*9=36>>36.\nBy bathing the ride bracelet, David saves $36 - $30 = $<<36-30=6>>6.\n#### 6",
+          "metadata_task_type": "math_reasoning",
+          "metadata_split": "test",
+          "metadata_row_index": 16827
+        }
+      ]
+    }
+  ]
+}

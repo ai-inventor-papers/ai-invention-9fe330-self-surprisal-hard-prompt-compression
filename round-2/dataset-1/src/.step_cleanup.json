@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "at": 1789864045.6463737,
+  "dry_run": true,
+  "freed_bytes": 1032664949,
+  "skipped": "",
+  "removed": [
+    {
+      "path": "download_datasets.py",
+      "source": "manifest",
+      "category": "code",
+      "reason": "helper script, not a deliverable",
+      "size_bytes": 5303
+    },
+    {
+      "path": "standardize_datasets.py",
+      "source": "manifest",
+      "category": "code",
+      "reason": "helper script, not a deliverable",
+      "size_bytes": 18416
+    },
+    {
+      "path": "data_out",
+      "source": "manifest",
+      "category": "intermediate",
+      "reason": "split intermediate files, re-generatable from standardize_datasets.py",
+      "size_bytes": 392593824
+    },
+    {
+      "path": "temp/datasets",
+      "source": "manifest",
+      "category": "dataset",
+      "reason": "re-downloadable from HuggingFace via download_datasets.py",
+      "size_bytes": 640047406
+    }
+  ],
+  "refused": [
+    {
+      "path": "logs",
+      "why": "keep list protects gen_art_dataset_1/logs/run.log"
+    },
+    {
+      "path": "full_full_data_out.json",
+      "why": "does not exist"
+    }
+  ]
+}
