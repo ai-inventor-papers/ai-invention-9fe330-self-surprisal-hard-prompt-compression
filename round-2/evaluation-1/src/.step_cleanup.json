@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "at": 1789863461.2414625,
+  "dry_run": true,
+  "freed_bytes": 10925295,
+  "skipped": "",
+  "removed": [
+    {
+      "path": "synthetic_method_out.json",
+      "source": "manifest",
+      "category": "synthetic_data",
+      "reason": "Synthetic experiment data generated for evaluation demo; replace with real method_out.json when available",
+      "size_bytes": 1979559
+    },
+    {
+      "path": "eval_out.json",
+      "source": "manifest",
+      "category": "eval_output",
+      "reason": "Full evaluation output - mini/preview variants already generated",
+      "size_bytes": 4472868
+    },
+    {
+      "path": "full_eval_out.json",
+      "source": "manifest",
+      "category": "eval_output",
+      "reason": "Full variant of eval output - redundant with eval_out.json",
+      "size_bytes": 4472868
+    }
+  ],
+  "refused": [
+    {
+      "path": "figures/*_spec.json",
+      "why": "does not exist"
+    }
+  ]
+}
