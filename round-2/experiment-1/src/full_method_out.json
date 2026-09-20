@@ -1,0 +1,378 @@
+{
+  "datasets": [
+    {
+      "dataset": "gsm8k",
+      "examples": [
+        {
+          "input": "[gsm8k] SSHPC @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SSHPC",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SSHPC",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SSHPC",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SSHPC",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "LLMLingua",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "LLMLingua",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "LLMLingua",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "LLMLingua",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SelectiveContext",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SelectiveContext",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SelectiveContext",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "SelectiveContext",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] Random @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "Random",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] Random @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "Random",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] Random @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "Random",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] Random @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "Random",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "ProxyOnTarget",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "ProxyOnTarget",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "ProxyOnTarget",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "ProxyOnTarget",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] None @ 2x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "None",
+          "metadata_compression_ratio": 2,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] None @ 4x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "None",
+          "metadata_compression_ratio": 4,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] None @ 8x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "None",
+          "metadata_compression_ratio": 8,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] None @ 10x",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}",
+          "metadata_dataset": "gsm8k",
+          "metadata_method": "None",
+          "metadata_compression_ratio": 10,
+          "metadata_pass_at_1": 0.0
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 2x (example 24)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 4x (example 25)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 8x (example 26)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 10x (example 27)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 2x (example 28)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 4x (example 29)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 8x (example 30)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] LLMLingua @ 10x (example 31)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 2x (example 32)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 4x (example 33)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 8x (example 34)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SelectiveContext @ 10x (example 35)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] Random @ 2x (example 36)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] Random @ 4x (example 37)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] Random @ 8x (example 38)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] Random @ 10x (example 39)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 2x (example 40)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 4x (example 41)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 8x (example 42)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] ProxyOnTarget @ 10x (example 43)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] None @ 2x (example 44)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] None @ 4x (example 45)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] None @ 8x (example 46)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] None @ 10x (example 47)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 2x (example 48)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        },
+        {
+          "input": "[gsm8k] SSHPC @ 4x (example 49)",
+          "output": "{\"pass@1\": 0.0}",
+          "predict_baseline": "{\"pass@1\": 0.0}"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "method_name": "SSHPC vs Proxy-Model Compression Benchmark",
+    "model": "gpt2",
+    "datasets": [
+      "gsm8k"
+    ],
+    "methods": [
+      "SSHPC",
+      "LLMLingua",
+      "SelectiveContext",
+      "Random",
+      "ProxyOnTarget",
+      "None"
+    ],
+    "compression_ratios": [
+      2,
+      4,
+      8,
+      10
+    ],
+    "num_examples_per_dataset": 10,
+    "device": "cpu"
+  }
+}

@@ -1,0 +1,16 @@
+[project]
+name = "sshpc-compression-benchmark"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.14.0",
+    "transformers==4.40.2",
+    "datasets==5.0.1",
+    "loguru==0.7.3",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "numpy==2.5.3",
+    "accelerate>=0.25.0",
+    "huggingface_hub==0.36.2",
+    "tokenizers==0.19.1",
+]
